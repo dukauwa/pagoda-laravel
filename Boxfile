@@ -3,7 +3,7 @@ build:
   version: 5.4
   stability: production
   exec:
-    - "composer install --no-interaction --prefer-source"
+    - "composer install --prefer-source"
   before_deploy:
     - "php artisan migrate"
   after_deploy:
